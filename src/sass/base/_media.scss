@@ -1,0 +1,416 @@
+@media(max-width:1199px) {
+    .header {
+        .header_nav {
+            
+            margin-left: 15px;
+            width: 550px;
+            a {
+                font-size: 18px;
+            }
+        }
+        .header__icons {
+            width: 85px;
+            right: 30px;
+        }
+    }
+    .about_city {
+        .about_city__description {
+            padding: 33px 30px 90px 50px;
+        }
+    }
+    .city_visit__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .city_visit__card_descr {
+            width: 155px;
+            margin-left: 0px;
+            font-size: 11px;
+        }
+        .city_visit__card_name {
+            margin-left: 0px;
+            text-align: center;
+            font-size: 36px;
+
+        }
+    }
+    .main_info {
+        .main_info__title {
+            font-size: 90px;
+            .main_info__title_description {
+                font-size: 71px;
+            }
+        }
+        .main_info__card {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        .header_nav {
+            
+            margin-left: 15px;
+            width: 450px;
+            a {
+                font-size: 15px;
+            }
+        }
+        .header__icons {
+            width: 80px;
+            right: 30px;
+        }
+    }
+    .main_info {
+        .main_info__title {
+            font-size: 80px;
+            .main_info__title_description {
+                font-size: 50px;
+            }
+        }
+        .main_info__card {
+            width: 31%;
+            font-size: 24px;
+            height: 150px;
+        }
+    }
+    .about_city {
+        .about_city__description {
+            padding: 43px 30px 60px 50px;
+            font-size: 23px;
+        }
+    }
+    .city_visit {
+        .city_visit__cards {
+            #eight {
+                margin-right: 20px;
+            }
+            #nineth {
+                margin-right: 20px;
+            }
+            #tenth {
+                margin-right: 0px;
+            }
+            #eleventh {
+                margin-right: 0px;
+            }
+        }
+    }
+    .city_visit__card {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .city_visit__card_descr {
+            width: 140px;
+            font-size: 10px;
+        }
+        .city_visit__card_name {
+            text-align: center;
+            font-size: 28px;
+
+        }
+        .city_visit__card_round {
+            right: 20px;
+        }
+        
+    }
+}
+
+
+
+
+
+@media (max-width:767px) {
+    .header {
+        .header_nav {
+            
+            margin-left: 15px;
+            width: 340px;
+            a {
+                font-size: 12px;
+            }
+        }
+        .header__icons {
+            width: 50px;
+            right: 10px;
+            .search {
+                width: 17px;
+            }
+            .profile {
+                width: 22px;
+            }
+        }
+    }
+
+    .main_info {
+        .main_info__title {
+            font-size: 60px;
+            .main_info__title_description {
+                font-size: 34px;
+            }
+        }
+        .main_info__card {
+            font-size: 18px;
+            height: 130px;
+        }
+    }
+    .about_city {
+        .about_city__description {
+            padding: 33px 25px 40px 40px;
+            font-size: 15px;
+        }
+        .about_city__img {
+            .about_city_img {
+                height: 300px;
+            }
+        }
+
+    }
+    .city_visit {
+        .city_visit__title {
+            padding: 0px;
+            font-size: 22px;
+        }
+        .city_visit__cards {
+            #eight {
+                margin-right: 20px;
+            }
+            #nineth {
+                margin-right: 0px;
+            }
+            #tenth {
+                margin-right: 20px;
+            }
+            #eleventh {
+                margin-right: 0px;
+            }
+        }
+    }
+    
+}
+@media (max-width:575px) {
+    .header {
+        .header_nav {
+            
+            display: none;
+        }
+        .header__menu {
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .5 );
+            transition: .8s all;
+            &_active {
+                left: 0px ;
+            }
+            &_item {
+                margin-top: 15px;
+                padding-right: 0px;
+                border: none;
+            }
+            a {
+                color: #fff;
+                margin-top: 20px;
+                font-size: 13px;
+            }
+        }
+            
+            
+                
+            
+            
+        .header__hamburger {
+            display: block;
+            position: absolute;
+            right: 64px;
+            top: 26px;
+            transform: translateX(-50%);
+            height: 16px;
+            width: 26px;
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #000;
+                margin-top: 3px;
+            }
+            &:nth-child(1) {
+                margin-top: 0px;
+            }
+            &_active {
+                margin-top: 6px;
+                transition: all .8s ;
+                span {
+                    transition: 0.8 all;
+                    &:nth-child(1) {
+                        transition: 0.8 all;
+                        margin-top: -2px;
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                        
+                    &:nth-child(3) {
+                        transition: 0.8 all;
+                        margin-top: -2px;
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+            
+                
+            
+                
+        }
+        
+           
+            
+       
+            
+
+        .header__icons {
+            width: 54px;
+            right: 6px;
+            .search {
+                width: 18px;
+            }
+            .profile {
+                width: 26px;
+            }
+        }
+    }
+
+    .main_info {
+        .main_info__title {
+            font-size: 50px;
+            .main_info__title_description {
+                font-size: 31px;
+            }
+        }
+        .main_info__card {
+            display: none;
+            &:nth-child(1) {
+                display: none;
+            }
+            &:nth-child(2) {
+                display: flex;
+                margin: 0 auto;
+                width: 64%;
+            }
+            &:nth-child(3) {
+                display: none;
+            }
+        }    
+    }
+    .about_city {
+        .about_city__description {
+            width: 100%;
+            padding: 30px 25px 50px 40px;
+            font-size: 19px;
+        }
+        .about_city__img {
+            display: none;
+            .about_city_img {
+                height: 230px;
+                width: 100%;
+            }
+        }
+
+    }
+    .city_visit {
+        .city_visit__title {
+            padding: 0px;
+            font-size: 14px;
+        }
+        .city_visit__cards {
+            #first {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            #third {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            #fifth {
+                margin-right: 0px;
+            }
+            #sixth {
+                margin-right: 0px;
+            }
+            #seventh {
+                margin-right: 0px;
+            }
+            #eight {
+                margin-right: 0px;
+            }
+            #nineth {
+                margin-right: 0px;
+            }
+            #tenth {
+                margin-right: 0px;
+            }
+            #eleventh {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+@media (max-width:321px) {
+    .header {
+        .header__menu {
+
+            a {
+                font-size: 10px;
+            }
+        }
+        .header__hamburger {
+            right: 58px;
+        }
+    }
+    .main_info {
+        text-align: center;
+        .main_info__title {
+            font-size: 38px;
+            .main_info__title_description {
+                font-size: 24px;
+            }
+        }
+        .main_info__card {
+            &:nth-child(2) {
+                display: flex;
+                margin: 0 auto;
+                width: 64%;
+                padding-bottom: 26px;
+                padding-top: 24px;
+            }
+
+        }    
+        
+    }
+    .about_city {
+        .about_city__description {
+            width: 100%;
+            padding: 30px 25px 50px 40px;
+            font-size: 14px;
+        }
+
+    }
+    .city_visit {
+        .city_visit__title {
+            padding: 0px;
+            font-size: 11px;
+        }
+    }
+}

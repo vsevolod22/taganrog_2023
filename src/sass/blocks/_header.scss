@@ -1,0 +1,56 @@
+.header {
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #000;
+    height: 70px;
+    margin-top: 20px;
+    position: relative;
+    &__hamburger {
+        display: none;
+    }
+        
+    &__logo {
+        margin-left: 20px;
+        width: 50px;
+    }
+    &_nav {
+        color: #000;
+        margin-left: 60px;
+        width: 650px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: #000;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+    }
+    &__icons {
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        position: absolute;
+        right: 80px;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+    }
+    .search {
+        width: 28px;
+    }
+    .profile {
+        width: 33px;
+    }
+}

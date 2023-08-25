@@ -1,0 +1,141 @@
+.navigation {
+  margin-top: 25px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
+.navigation a:nth-child(3) {
+  color: #0031FF;
+}
+
+.place_box {
+  display: flex;
+  flex-direction: column;
+}
+.place__title {
+  width: 90%;
+  margin-top: 55px;
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.place__container {
+  display: flex;
+  min-height: 650px;
+}
+.place__descr {
+  margin-top: 35px;
+  width: 90%;
+  text-indent: 30px;
+}
+.place__descr p {
+  margin: 10px 0 10px 0;
+}
+.place__info {
+  padding-top: 90px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 55%;
+  margin-top: 45px;
+}
+.place__img {
+  width: 340px;
+  height: 230px;
+}
+.place__img_small {
+  width: 100px;
+  height: 60px;
+}
+.place__img_small:nth-child(1) {
+  margin-right: 6px;
+}
+.place__img_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  width: 340px;
+  height: 80px;
+}
+.place__contact {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.place__contact span {
+  font-weight: 900;
+}
+.place__operating_mode {
+  margin-top: 30px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.place__operating_mode span {
+  font-weight: 900;
+}
+.place__card {
+  width: 70%;
+  min-height: 500px;
+  margin-top: 60px;
+}
+.place__card_container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.place_other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.place_other__title {
+  color: #000;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.place_other__container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.place_other__img {
+  margin-top: 50px;
+  margin-right: 40px;
+  width: 100%;
+}
+.place_other__img:last-child {
+  margin-right: 0px;
+}
+.place_other_img {
+  min-height: 200px;
+  width: 100%;
+}
+.place_other_img_title {
+  margin-top: 30px;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

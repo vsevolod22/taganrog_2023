@@ -1,0 +1,54 @@
+.main_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding-bottom: 65px;
+  min-height: 598px;
+  margin-top: 25px;
+  background: url(../../img/first_section/best_tagan.jpg) center center/cover no-repeat;
+}
+.main_info__title {
+  width: 90%;
+  padding-top: 100px;
+  color: #0500FF;
+  font-family: Roboto;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.main_info__title_description {
+  color: #000;
+  font-family: Roboto;
+  font-size: 94px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 6px;
+}
+.main_info__cards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 170px;
+}
+.main_info__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  position: relative;
+  padding: 30px 0 40px 0px;
+  color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 30px;
+  width: 28%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+}
