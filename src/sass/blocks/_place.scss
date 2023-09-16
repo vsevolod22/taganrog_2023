@@ -8,7 +8,7 @@
     a {
         text-decoration: none;
         color: black;
-        &:nth-child(3) {
+        &:nth-child(5) {
             color: #0031FF;
         }
     }
@@ -41,6 +41,9 @@
             margin: 10px 0 10px 0;
         }
     }
+    &__description {
+        display: none;
+    }
     &__info {
         padding-top: 90px;
         display: flex;
@@ -49,11 +52,16 @@
         flex-direction: column;
         width: 55%;
         margin-top: 45px;
+        &_descr {
+            display: none;
+        }
         
     } 
     &__img {
+        position: relative;
         width: 340px;
         height: 230px;
+        background: url(../../img/third_section/chehov_house.jpg) center (center / cover) no-repeat;
         
         &_small {
             width: 100px;
@@ -126,6 +134,7 @@
             width: 90%;
         }
         &__img {
+           
             margin-top: 50px;
             margin-right: 40px;
             width: 100%;
@@ -145,6 +154,78 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
+            }
+        }
+    }
+    &__slide {
+        &_round_right {
+            z-index: 1;
+            position: absolute;
+            right: 10px;
+            bottom: 100px;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.75);
+            i {
+                border: solid white ;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+              }
+            .right {
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                left: 15px;
+                bottom: 12px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+
+            span {
+                position: absolute;
+                bottom: 15px;
+                right: 10px;
+                width: 11px;
+                height: 2px;
+                background-color: #fff;
+
+            }
+        }
+        &_round_left {
+            z-index: 1;
+            position: absolute;
+            left: 10px;
+            bottom: 100px;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.75);
+            i {
+                border: solid white ;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+              }
+            .left {
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                right: 13px;
+                bottom: 12px;
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+
+            span {
+                position: absolute;
+                bottom: 15px;
+                right: 10px;
+                width: 11px;
+                height: 2px;
+                background-color: #fff;
+
             }
         }
     }

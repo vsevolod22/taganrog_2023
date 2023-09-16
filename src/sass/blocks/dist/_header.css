@@ -15,6 +15,9 @@
   margin-left: 20px;
   width: 50px;
 }
+.header__logo_img {
+  width: 70px;
+}
 .header_nav {
   color: #000;
   margin-left: 60px;

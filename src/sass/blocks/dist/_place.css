@@ -10,7 +10,7 @@
   text-decoration: none;
   color: black;
 }
-.navigation a:nth-child(3) {
+.navigation a:nth-child(5) {
   color: #0031FF;
 }
 
@@ -39,6 +39,9 @@
 .place__descr p {
   margin: 10px 0 10px 0;
 }
+.place__description {
+  display: none;
+}
 .place__info {
   padding-top: 90px;
   display: flex;
@@ -48,9 +51,14 @@
   width: 55%;
   margin-top: 45px;
 }
+.place__info_descr {
+  display: none;
+}
 .place__img {
+  position: relative;
   width: 340px;
   height: 230px;
+  background: url(../../img/third_section/chehov_house.jpg) center center/cover no-repeat;
 }
 .place__img_small {
   width: 100px;
@@ -138,4 +146,70 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.place__slide_round_right {
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  bottom: 100px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.place__slide_round_right i {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.place__slide_round_right .right {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 15px;
+  bottom: 12px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.place__slide_round_right span {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  width: 11px;
+  height: 2px;
+  background-color: #fff;
+}
+.place__slide_round_left {
+  z-index: 1;
+  position: absolute;
+  left: 10px;
+  bottom: 100px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.place__slide_round_left i {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.place__slide_round_left .left {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 13px;
+  bottom: 12px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.place__slide_round_left span {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  width: 11px;
+  height: 2px;
+  background-color: #fff;
 }
