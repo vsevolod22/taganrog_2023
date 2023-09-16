@@ -1,0 +1,324 @@
+.city_visit {
+    padding: 90px 0 90px 0;
+    min-height: 600px;
+    margin-top: 40px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 28px 0 28px;
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        a {
+            font-weight: 400;
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+    &__container {
+        width: 90%;
+    }
+    &__cards {
+        margin-top: 54px;
+    }
+    &__card {
+        position: relative;
+        padding-right: 30px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        height: 335px;
+        &_descr {
+            z-index: 3;
+            margin-top: 50px;
+            margin-left: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.45px;
+            background-color: rgba(187, 187, 187, 1);
+            border-radius: 30px;
+            height: 30px;
+            width: 210px;
+        }
+        &_name {
+            z-index: 3;
+            margin-top: 10px;
+            margin-left: 30px;
+            color: #FFF;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &_round {
+            z-index: 1;
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background-color: rgba(0, 49, 255, 0.75);
+            i {
+                border: solid white ;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+              }
+            .right {
+                width: 10px;
+                height: 11px;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+            span {
+                position: absolute;
+                bottom: 15px;
+                right: 9px;
+                width: 16px;
+                height: 1px;
+                background-color: #fff;
+
+            }
+        }
+
+    }
+    :nth-child(2) {
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    :nth-child(4) {
+        margin-right: 0px;
+    }
+    #first {
+        border-radius: 30px;
+        z-index: -1;
+        position: relative;
+        background: linear-gradient(#000, #000, #fff);
+        &::before {  
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/third_section/chehov_house.jpg) center (center / cover) no-repeat;
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(256,256,256,1)
+        }
+    }
+    #second {
+        z-index: -1;
+        position: relative; 
+        background: linear-gradient(#000, #000, #000, #fff, #fff);
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/third_section/lastMonument.jpg) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(256,256,256,0.24)
+      }
+    }
+    #third {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.95;
+        &::before { 
+            border-radius: 30px;
+            opacity: 1;  
+            background: url(../../resources/img/third_section/petr.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(256,256,256,0.24)
+      }
+    }
+    #fourth {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/third_section/primorsk_park.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+    #fifth {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/fourth_section/marino.jpg) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+    #sixth {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        margin-right: 20px;
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/fourth_section/guzzler.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+    #seventh {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/fourth_section/gorsky.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+    #eight {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        margin-right: 42px;
+        flex-wrap: nowrap;
+         
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/fifth_section/star_ctystal.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+    #nineth {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        margin-right: 42px;
+        
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/fifth_section/taganrog.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+    #tenth {
+        margin-right: 0px;
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/fifth_section/bristol.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+    #eleventh {
+        z-index: -1;
+        position: relative; 
+        background-color: #000;
+        opacity: 0.88;
+        &::before { 
+            border-radius: 30px;
+            opacity: 0.9;  
+            background: url(../../resources/img/fifth_section/grinwich.png) center (center / cover) no-repeat;
+            z-index: -1; 
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+      }
+    }
+
+
+}
+.card_flex {
+    justify-content: center;
+}
